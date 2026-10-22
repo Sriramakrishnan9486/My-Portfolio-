@@ -3,7 +3,6 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 $('#yr').textContent = new Date().getFullYear();
 
-// Theme
 const root = document.documentElement;
 try {
   const t = localStorage.getItem('theme');
@@ -18,7 +17,6 @@ $('#themeBtn').addEventListener('click', () => {
   } catch (e) {}
 });
 
-// Mobile menu
 $('#menuBtn').addEventListener('click', () =>
   $('#links').classList.toggle('open')
 );
