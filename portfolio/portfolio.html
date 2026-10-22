@@ -46,7 +46,6 @@
   .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
   ::selection { background: var(--red); color: #fff; }
 
-  /* ---------- Header ---------- */
   header { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background .3s, box-shadow .3s, border-color .3s; border-bottom: 1px solid transparent; }
   header.scrolled { background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-color: var(--border); }
   nav { display: flex; align-items: center; justify-content: space-between; height: 70px; }
@@ -61,7 +60,6 @@
   .tools { display: flex; gap: 10px; align-items: center; }
   #menuBtn { display: none; }
 
-  /* ---------- Hero ---------- */
   .hero { position: relative; min-height: 100vh; display: flex; align-items: center; padding: 120px 0 70px; overflow: hidden;
     background:
       radial-gradient(900px 500px at 85% 10%, color-mix(in srgb, var(--red) 28%, transparent), transparent 60%),
@@ -93,7 +91,6 @@
   .badge.b1 { left: -26px; bottom: 36px; }
   .badge.b2 { right: -18px; top: 30px; }
 
-  /* ---------- Stats ---------- */
   .stats { background: var(--bg-alt); border-block: 1px solid var(--border); }
   .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
   .stat { text-align: center; padding: 30px 12px; border-right: 1px solid var(--border); }
@@ -101,7 +98,6 @@
   .stat b { display: block; font-family: var(--serif); font-size: 2.2rem; color: var(--gold); line-height: 1.1; }
   .stat span { color: var(--muted); font-size: .85rem; letter-spacing: .5px; }
 
-  /* ---------- Sections ---------- */
   section { padding: 96px 0; }
   section.alt { background: var(--bg-alt); }
   .sec-head { margin-bottom: 44px; }
@@ -113,7 +109,6 @@
   .card:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: var(--shadow); }
   .card h3 { font-size: 1.05rem; margin-bottom: 8px; }
 
-  /* About */
   .about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 36px; }
   .about-text p { color: var(--muted); margin-bottom: 16px; }
   .about-text p strong { color: var(--text); font-weight: 600; }
