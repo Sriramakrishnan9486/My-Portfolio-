@@ -457,7 +457,6 @@
   $('#menuBtn').addEventListener('click', () => $('#links').classList.toggle('open'));
   $$('#links a').forEach(a => a.addEventListener('click', () => $('#links').classList.remove('open')));
 
-  // Header, back-to-top, scroll spy
   const header = $('header'), toTop = $('#toTop');
   const sections = $$('main section[id]');
   function onScroll() {
@@ -470,7 +469,6 @@
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
   toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
 
-  // Typing effect
   const roles = ['Computer Science Student', 'Python & C Programmer', 'Aspiring Software Developer'];
   const typed = $('#typed'); let ri = 0, ci = 0, del = false;
   (function tick() {
@@ -482,7 +480,6 @@
     setTimeout(tick, del ? 38 : 75);
   })();
 
-  // Reveal, skill bars, counters
   function countUp(el) {
     const target = +el.dataset.count; let n = 0;
     const step = Math.max(1, Math.ceil(target / 30));
@@ -502,7 +499,6 @@
   }, { threshold: .6 });
   $$('[data-count]').forEach(el => io2.observe(el));
 
-  // Contact form opens the visitor's email app with the message filled in
   $('#contactForm').addEventListener('submit', e => {
     e.preventDefault();
     const name = $('#n').value.trim(), from = $('#e').value.trim(), msg = $('#m').value.trim();
