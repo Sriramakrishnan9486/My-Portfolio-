@@ -27,7 +27,6 @@ $$('#links a').forEach(a =>
   )
 );
 
-// Header, back-to-top, scroll spy
 const header = $('header');
 const toTop = $('#toTop');
 const sections = $$('main section[id]');
@@ -57,7 +56,6 @@ toTop.addEventListener('click', () =>
   scrollTo({ top: 0, behavior: 'smooth' })
 );
 
-// Typing effect
 const roles = [
   'Computer Science Student',
   'Python & C Programmer',
@@ -85,7 +83,6 @@ let ri = 0, ci = 0, del = false;
   setTimeout(tick, del ? 38 : 75);
 })();
 
-// Reveal, skill bars, counters
 function countUp(el) {
   const target = +el.dataset.count;
   let n = 0;
@@ -125,7 +122,6 @@ const io2 = new IntersectionObserver(entries => {
 
 $$('[data-count]').forEach(el => io2.observe(el));
 
-// Contact form opens the visitor's email app
 $('#contactForm').addEventListener('submit', e => {
   e.preventDefault();
 
