@@ -97,7 +97,6 @@
   .card:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: var(--shadow); }
   .card h3 { font-size: 1.05rem; margin-bottom: 8px; }
 
-  /* About */
   .about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 36px; }
   .about-text p { color: var(--muted); margin-bottom: 16px; }
   .about-text p strong { color: var(--text); font-weight: 600; }
@@ -107,7 +106,6 @@
   .facts li span:first-child { color: var(--muted); }
   .facts li span:last-child { font-weight: 600; text-align: right; }
 
-  /* Education timeline */
   .timeline { position: relative; margin-top: 8px; padding-left: 30px; }
   .timeline::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(var(--gold), var(--red)); }
   .t-item { position: relative; margin-bottom: 22px; }
@@ -116,7 +114,6 @@
   .t-item h3 { font-size: 1.05rem; margin: 2px 0; }
   .t-item p { color: var(--muted); font-size: .92rem; }
 
-  /* Skills */
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
   .skill { margin-bottom: 18px; }
   .skill:last-child { margin-bottom: 0; }
@@ -127,7 +124,6 @@
   .tags { display: flex; flex-wrap: wrap; gap: 9px; }
   .tag { font-size: .82rem; padding: 6px 14px; border-radius: 99px; border: 1px solid var(--border); color: var(--gold-soft); background: color-mix(in srgb, var(--gold) 7%, transparent); }
 
-  /* Projects */
   .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; }
   .project .num { font-family: var(--serif); font-size: 2rem; color: var(--red-soft); opacity: .8; line-height: 1; }
   .project h3 { margin-top: 12px; }
@@ -136,7 +132,6 @@
   .project .plinks { margin-top: 16px; display: flex; gap: 16px; font-size: .88rem; font-weight: 600; color: var(--gold-soft); }
   .project.placeholder { border-style: dashed; background: transparent; }
 
-  /* Certifications */
   .cert-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
   .cert-top h3 { margin: 0; }
   .count { background: var(--red); color: #fff; font-size: .75rem; font-weight: 700; border-radius: 99px; padding: 2px 11px; }
